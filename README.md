@@ -75,7 +75,7 @@ O fluxograma garante uma **interação contínua** e uma **experiência de jogo 
 https://www.figma.com/proto/KBulNzYqjDY3G5JKUM9EzH/Untitled?node-id=0-1&t=GX8Ta6zdOw1MqnI2-1
 
 ### Diagrama de Caso de Uso  
-<img src="https://github.com/user-attachments/assets/770a2ee4-7a47-4fdd-ab09-4d591ba9e4e0" width="600">
+![Diagrama sem nome drawio (1)](https://github.com/user-attachments/assets/58e37ce2-eaed-48de-8052-edddfe18aa2c)
 
 ### Diagrama de Classe  
 <img src="https://github.com/user-attachments/assets/afa9c35e-a16f-4d26-a8c2-9082fcb8c101" width="600"> 
