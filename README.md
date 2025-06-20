@@ -4,6 +4,38 @@
 
 Este projeto é responsável por exibir as cartas de cada jogador em um jogo de cartas de Pokémon. A aplicação consulta serviços de distribuição de cartas e de jogadores para recuperar as informações necessárias sobre os jogadores e suas cartas. Além disso, a aplicação consulta a PokéAPI para recuperar as informações necessárias sobre os Pokémon.
 
+## Padrão de Arquitetura
+
+O padrão de arquitetura escolhido foi o SPA (Single Page Application). Essa abordagem se encaixa perfeitamente no projeto, pois permite o desenvolvimento de um frontend em que as páginas não precisam ser recarregadas a cada interação. Dessa forma, conseguimos garantir uma navegação mais fluida, rápida e dinâmica para o usuário, melhorando significativamente a experiência de uso da aplicação.
+
+## Padrão de Arquitetura
+
+O projeto faz uso de três Design Patterns clássicos de Engenharia de Software para melhorar a organização, manutenção e escalabilidade do código.
+
+1. Factory Pattern
+
+O Factory Pattern foi utilizado para centralizar a lógica de criação das cartas Pokémon no projeto. Em vez de criar objetos de carta diretamente em várias partes do código, a aplicação conta com uma classe de Fábrica (PokemonCardFactory) responsável por produzir instâncias completas de cartas, incluindo detalhes como id, nome, sprite e outros atributos.
+
+Benefícios:
+
+Centralização da lógica de criação das cartas.
+
+Otimização do código.
+
+2. Observer Pattern (Padrão Observador)
+
+O Observer Pattern foi aplicado para gerenciar o sistema de notificações da aplicação. O NotificationBell atua como um Observador, enquanto um NotificationObserver central armazena a lista de notificações e notifica automaticamente todos os componentes inscritos quando um novo evento acontece (como uma troca de cartas).
+
+3. Facade Pattern (Padrão Fachada)
+
+A Facade foi criada para simplificar e centralizar todas as interações com a PokéAPI, a API pública que fornece informações detalhadas sobre cada Pokémon. Em vez de espalhar requisições HTTP diretas pelo código, o projeto conta com uma camada de fachada (PokemonFacade) que expõe métodos simples para consulta de dados.
+
+Benefícios:
+
+Isola as dependências externas (como a PokéAPI).
+
+Garante um único ponto de controle para tratamento de erros relacionados a chamadas externas.
+
 ## Funcionalidades
 
 - **Consulta de Jogadores:** Recupera informações sobre os jogadores.
@@ -75,7 +107,7 @@ O fluxograma garante uma **interação contínua** e uma **experiência de jogo 
 https://www.figma.com/proto/KBulNzYqjDY3G5JKUM9EzH/Untitled?node-id=0-1&t=GX8Ta6zdOw1MqnI2-1
 
 ### Diagrama de Caso de Uso  
-<img src="https://github.com/user-attachments/assets/770a2ee4-7a47-4fdd-ab09-4d591ba9e4e0" width="600">
+<img src="https://github.com/user-attachments/assets/4bec9fbc-ee45-4c71-bdaf-df2ae5a23f8c" width="600">
 
 ### Diagrama de Classe  
-<img src="https://github.com/user-attachments/assets/afa9c35e-a16f-4d26-a8c2-9082fcb8c101" width="600"> 
+<img src="github.com/user-attachments/assets/e5fbdc78-777a-4dfc-a697-19eaa5cb6c9e" width="600">
